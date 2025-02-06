@@ -1,0 +1,30 @@
+
+# Ignorar entornos virtuales
+venv/
+env/
+.taximeter_env/
+*.conda
+*.virtualenv
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+
+# Configuración de Anaconda
+*.ipynb_checkpoints
+*.log
+*.sqlite
+.DS_Store
+
+# Archivos grandes o sensibles
+data/*.csv
+data/*.json
+data/*.db
+*.h5
+*.pickle
+*.pkl
+
+# Archivos de entorno y claves sensibles
+.env
+*.pem
+*.key
