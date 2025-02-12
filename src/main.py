@@ -1,5 +1,4 @@
-from core.simulations import start_trip
-from core.calculations import calculate_cost, apply_vat
+from trip_service import start_trip
 
 def main():
     print("Welcome to the Taximeter App!")
