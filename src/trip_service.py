@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-from billing import calculate_cost, apply_vat
+from src.billing import calculate_cost, apply_vat
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))

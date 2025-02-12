@@ -1,4 +1,4 @@
-from trip_service import start_trip
+from src.trip_service import start_trip
 
 def main():
     print("Welcome to the Taximeter App!")
