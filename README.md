@@ -95,6 +95,12 @@ bash install.sh
 ```
 ---
 
+## Conclusiones por fase
+### Esencial
+- Se ha umplido con los requerimientos exigidos, además de estructurar por módulos la aplicación y realizar pruebas del archivo **billing.py**. No se han completado datisfactoriamente los tests sobre el archivo **trip_service.py**.
+- Se ha buscado la comodidad de uso y comprensión para el usuario con preguntas sencillas y claras.
+- Se establece el tiempo real como cuantificador del precio final.
+
 # 🛡️ Licencia - GNU General Public License v3.0  
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
