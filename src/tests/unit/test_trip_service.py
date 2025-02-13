@@ -22,6 +22,9 @@ class TestTripService(unittest.TestCase):
             mock_print.assert_any_call("Calculating trip cost...")
             mock_print.assert_any_call("Thank you for using the Taximeter App. Goodbye!")
 
+
+
+
     @patch('builtins.input', side_effect=['y', 'y', 'n', 'y'])  # Primero mueve, luego detiene, luego termina
     @patch('src.billing.calculate_cost', return_value=10.0)
     @patch('src.billing.apply_vat', return_value=12.1)

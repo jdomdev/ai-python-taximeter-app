@@ -1,0 +1,3 @@
+2025-02-13 13:50:40.943073 | Time stopped: 8.27s | Time moving: 28.38s | Total cost: 1.69€
+2025-02-13 15:31:38.716846 | Time stopped: 139.84s | Time moving: 8.19s | Total cost: 5.82€
+2025-02-13 21:51:17.213591 | Time stopped: 14.36s | Time moving: 0.00s | Total cost: 0.25€

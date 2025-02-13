@@ -3,6 +3,12 @@ STOP_RATE = 0.02  # 2 cents per second
 MOVE_RATE = 0.05  # 5 cents per second
 VAT_RATE = 0.21   # 21% VAT(Value Added Tax = IVA)
 
+def set_dynamic_rates(demand_factor):
+    """Aplicar el factor de demanda a las tarifas"""
+    global STOP_RATE, MOVE_RATE
+    STOP_RATE *= demand_factor
+    MOVE_RATE *= demand_factor
+
 def calculate_cost(time_stopped, time_moving):
     """   Calculate the total cost based on time stopped and time moving.
     """
@@ -15,3 +21,4 @@ def apply_vat(cost):
     Apply 21% VAT to the total cost.
     """
     return cost * (1 + VAT_RATE)
+
