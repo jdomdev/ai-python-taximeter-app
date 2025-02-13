@@ -5,12 +5,8 @@ def main():
     print("This app calculates the cost of your trip based on time stopped and time in motion.")
     print("Press Ctrl+C to exit at any time.\n")
 
-    while True:
-        start_trip()
-        user_input = input("Do you want to start another trip? (y/n): ").strip().lower()
-        if user_input != 'y':
-            print("Thank you for using the Taximeter App. Goodbye!")
-            break
+    # Call the function that starts the trip
+    start_trip()
 
 if __name__ == "__main__":
     main()
