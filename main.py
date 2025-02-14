@@ -9,7 +9,7 @@ logging.basicConfig(
 )
 
 def main():
-    print("Welcome to the Taximeter App!")
+    print("\nWelcome to the Taximeter App!")
     print("This app calculates the cost of your trip based on time stopped and time in motion.")
     print("Press Ctrl+C to exit at any time.\n")
     logging.info("Aplication started.")
