@@ -18,3 +18,4 @@
 2025-02-14 11:39:14.552287 | Time stopped: 53.33s | Time moving: 81.77s | Total cost: 6.40€
 2025-02-14 12:13:38.467730 | Time stopped: 11.46s | Time moving: 24.48s | Total cost: 1.52€
 2025-02-14 12:25:14.865098 | Time stopped: 17.27s | Time moving: 16.27s | Total cost: 1.85€
+0.00s stopped | 0.00s moving | Cost: 0.00€

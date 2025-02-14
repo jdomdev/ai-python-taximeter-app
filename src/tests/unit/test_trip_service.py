@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from src.trip_service import start_trip
+from taximeter import start_trip
 from src.billing import calculate_cost, apply_vat
 
 class TestTripService(unittest.TestCase):
