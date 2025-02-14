@@ -1,24 +1,33 @@
-# Rates
-STOP_RATE = 0.02  # 2 cents per second
-MOVE_RATE = 0.05  # 5 cents per second
-VAT_RATE = 0.21   # 21% VAT(Value Added Tax = IVA)
+import logging
+import random
 
-def set_dynamic_rates(demand_factor):
-    """Aplicar el factor de demanda a las tarifas"""
-    global STOP_RATE, MOVE_RATE
-    STOP_RATE *= demand_factor
-    MOVE_RATE *= demand_factor
+class Billing:
+    STOP_RATE = 0.02  # Cost per second while stopped
+    MOVE_RATE = 0.05  # Cost per second while moving
+    VAT_RATE = 0.21  # Value-added tax (VAT)
 
-def calculate_cost(time_stopped, time_moving):
-    """   Calculate the total cost based on time stopped and time moving.
-    """
-    cost_stopped = time_stopped * STOP_RATE
-    cost_moving = time_moving * MOVE_RATE
-    return cost_stopped + cost_moving
+    def __init__(self, demand_factor=1.0):
+        """
+        Initializes billing system.
+        :param demand_factor: Multiplier for demand pricing.
+        """
+        self.demand_factor = demand_factor if demand_factor else self.auto_demand_factor()
 
-def apply_vat(cost):
-    """
-    Apply 21% VAT to the total cost.
-    """
-    return cost * (1 + VAT_RATE)
+    def auto_demand_factor(self):
+        """Determines automatic demand factor based on random simulation."""
+        factor = round(random.uniform(1.0, 2.5), 2)
+        logging.info(f"Automatic demand factor set to {factor}")
+        return factor
 
+    def calculate_cost(self, time_stopped, time_moving):
+        """Calculates the total cost including VAT."""
+        base_cost = (time_stopped * self.STOP_RATE) + (time_moving * self.MOVE_RATE)
+        total_cost = base_cost * self.demand_factor
+        total_cost_with_vat = total_cost * (1 + self.VAT_RATE)
+        
+        # Log trip details to history file
+        with open('trip_history.txt', 'a') as f:
+            f.write(f"{time_stopped:.2f}s stopped | {time_moving:.2f}s moving | Cost: {total_cost_with_vat:.2f}€\n")
+        
+        logging.info(f"Cost calculated: {total_cost_with_vat:.2f}€ (Demand factor: {self.demand_factor})")
+        return total_cost_with_vat
