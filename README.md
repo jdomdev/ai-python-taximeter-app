@@ -100,6 +100,10 @@ bash install.sh
 - Se ha umplido con los requerimientos exigidos, además de estructurar por módulos la aplicación y realizar pruebas del archivo **billing.py**. No se han completado datisfactoriamente los tests sobre el archivo **trip_service.py**.
 - Se ha buscado la comodidad de uso y comprensión para el usuario con preguntas sencillas y claras.
 - Se establece el tiempo real como cuantificador del precio final.
+### Medio
+- En cuanto al sistema de registro, se han implementado dos archivos:
+  - taximeter.log: que recoge todas las acciones/eventos de relevancia que se producen durante la ejecución de la aplicación.
+  - trip_history.txt: guarda información diferente al taximeter.log, como es marca de tiempo de inicio(timestamp), los segundos que pasa el taxi parado, en movimiento y el coste total del trayecto.
 
 # 🛡️ Licencia - GNU General Public License v3.0  
 
