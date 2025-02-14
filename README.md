@@ -110,24 +110,30 @@ Asegúrate de tener instalado:
 ## 📊 Niveles de Implementación  
 
 ### 🟢 Nivel Esencial  
-- Programa CLI en Python.  
-- Cálculo de tarifas basado en tiempo parado y en movimiento.  
-- Finalización del trayecto con cálculo del total.  
+Desarrollar un programa CLI (Interfaz de Línea de Comandos) en Python.
+- Al iniciar, el programa debe dar la bienvenida y explicar su funcionamiento.
+- Implementar las siguientes funcionalidades básicas:
+  - Iniciar un trayecto.
+  - Calcular tarifa mientras el taxi está parado (2 céntimos por segundo).
+  - Calcular tarifa mientras el taxi está en movimiento (5 céntimos por segundo).
+  - Finalizar un trayecto y mostrar el total en euros.
+  - Permitir iniciar un nuevo trayecto sin cerrar el programa.
 
 ### 🟡 Nivel Medio  
-- Sistema de logs para trazabilidad.  
-- Tests unitarios.  
-- Historial de trayectos en archivo de texto.  
+- Implementar un sistema de logs para la trazabilidad del código.
+- Agregar tests unitarios para asegurar el correcto funcionamiento del programa.
+- Crear un registro histórico de trayectos pasados en un archivo de texto plano.
+- Permitir la configuración de precios para adaptarse a la demanda actual.
 
 ### 🟠 Nivel Avanzado  
-- Refactorización con OOP.  
-- Autenticación con contraseñas.  
-- Interfaz gráfica (GUI) con `tkinter`.  
+- Refactorizar el código utilizando un enfoque orientado a objetos (OOP).
+- Implementar un sistema de autenticación con contraseñas para proteger el acceso al programa.
+- Desarrollar una interfaz gráfica de usuario (GUI) para hacer el programa más amigable. 
 
 ### 🔴 Nivel Experto  
-- Integración con base de datos.  
-- Dockerización de la aplicación.  
-- Versión web con Flask o Django.  
+- Integrar una base de datos para almacenar los registros de trayectos pasados.
+- Dockerizar la aplicación para facilitar su despliegue y portabilidad.
+- Desarrollar una versión web de la aplicación accesible a través de internet.
 
 ---
 
