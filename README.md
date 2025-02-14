@@ -1,39 +1,9 @@
-
 # 🚖 Taximeter App  
 
 ## 📝 Descripción del Proyecto  
 Este proyecto consiste en desarrollar un prototipo de taxímetro digital utilizando Python. El objetivo es modernizar el sistema de facturación de los taxis y crear un sistema que calcule las tarifas a cobrar a los clientes de manera precisa y eficiente.  
 
-## 📊 Niveles de Implementación  
-
-### 🟢 Nivel Esencial  
-La primera versión funcional del taxímetro digital con las siguientes características:  
-- Programa CLI (Interfaz de Línea de Comandos) en Python.  
-- Bienvenida y explicación del funcionamiento.  
-- Cálculo de tarifas basado en:  
-  - **Taxi parado:** 2 céntimos por segundo.  
-  - **Taxi en movimiento:** 5 céntimos por segundo.  
-- Finalización del trayecto con cálculo del total.  
-- Opción para iniciar nuevos trayectos sin cerrar el programa.  
-
-### 🟡 Nivel Medio
-En futuras versiones se planea:  
-- Implementar un sistema de logs para trazabilidad del código.  
-- Agregar tests unitarios para verificar el correcto funcionamiento.  
-- Guardar un historial de trayectos en un archivo de texto.  
-- Permitir la configuración de tarifas de acuerdo con la demanda.  
-
-### 🟠 Nivel Avanzado
-Para una versión más robusta, se considera:  
-- Refactorización del código utilizando Programación Orientada a Objetos (OOP).  
-- Implementación de autenticación con contraseñas para el acceso.  
-- Creación de una interfaz gráfica (GUI) para una mejor experiencia de usuario.  
-
-### 🔴 Nivel Experto
-En una etapa avanzada, se prevé:  
-- Integración con una base de datos para almacenar registros de trayectos.  
-- Dockerización de la aplicación para facilitar su despliegue y portabilidad.  
-- Desarrollo de una versión web utilizando un framework como Flask o Django.  
+---
 
 ## 🛠️ Tecnologías Utilizadas  
 - **Python** 🐍  
@@ -44,68 +14,124 @@ En una etapa avanzada, se prevé:
   - `tkinter`, `SQLite` (Nivel Avanzado)  
   - `Docker`, `Flask/Django` (Nivel Experto)  
 
+---
+
 ## 🚀 Instalación y Uso  
-1. Clona el repositorio:  
+
+### **Requisitos Previos**  
+Asegúrate de tener instalado:  
+- **Python 3.8+** 🐍  
+- **Git** (opcional, para clonar el repositorio)  
+
+---
+
+### **Instalación con `pip`**  
+
+1. **Clona el repositorio** (opcional si ya tienes el código):  
    ```bash
    git clone https://github.com/jdomdev/taximeter-app-python.git
    cd taximeter-app-python
    ```
-2. Instala las dependencias necesarias:  
+
+2. **Crea un entorno virtual** (recomendado):  
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # En Linux/Mac
+   venv\Scripts\activate     # En Windows
+   ```
+
+3. **Instala las dependencias con `pip`**:  
    ```bash
    pip install -r requirements.txt
    ```
-3. Ejecuta el programa:  
+
+4. **Ejecuta la aplicación**:  
    ```bash
    python taximeter.py
-   ```  
+   ```
+
+---
+
+### **Instalación con `uv`**  
+
+1. **Instala `uv`** (si no lo tienes instalado):  
+   ```bash
+   pip install uv
+   ```
+
+2. **Clona el repositorio** (opcional si ya tienes el código):  
+   ```bash
+   git clone https://github.com/jdomdev/taximeter-app-python.git
+   cd taximeter-app-python
+   ```
+
+3. **Crea un entorno virtual** (recomendado):  
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # En Linux/Mac
+   venv\Scripts\activate     # En Windows
+   ```
+
+4. **Instala las dependencias con `uv`**:  
+   ```bash
+   uv pip install -r requirements.txt
+   ```
+
+5. **Ejecuta la aplicación**:  
+   ```bash
+   python taximeter.py
+   ```
+
+---
+
+### **Uso de la Aplicación**  
+
+1. **Iniciar un viaje**:  
+   - La aplicación te preguntará si deseas iniciar el viaje. Responde `y` para comenzar.  
+
+2. **Controlar el taxi**:  
+   - Durante el viaje, la aplicación te preguntará si deseas mover o detener el taxi. Responde `y` o `n` según sea necesario.  
+
+3. **Finalizar el viaje**:  
+   - Cuando desees finalizar el viaje, responde `y` cuando se te pregunte si deseas terminar el trayecto.  
+   - La aplicación calculará el costo total y mostrará un resumen del viaje.  
+
+4. **Iniciar un nuevo viaje**:  
+   - Después de finalizar un viaje, puedes iniciar uno nuevo sin cerrar la aplicación.  
+
+---
 
 ## 📌 Estado del Proyecto  
-🏗️ Nivel esencial en proceso.  
+🏗️ Nivel avanzado en proceso.  
 🔜 Próximas mejoras en los niveles siguientes.  
 
 ---
 
-📌 **Autor:** Juan Domingo  
-📅 **Última actualización:** a diario hasta fecha de entrega del proyecto.  
+## 📊 Niveles de Implementación  
 
+### 🟢 Nivel Esencial  
+- Programa CLI en Python.  
+- Cálculo de tarifas basado en tiempo parado y en movimiento.  
+- Finalización del trayecto con cálculo del total.  
 
-Aquí tienes el código Bash para instalar la configuración del proyecto desde `environment.yml`.
+### 🟡 Nivel Medio  
+- Sistema de logs para trazabilidad.  
+- Tests unitarios.  
+- Historial de trayectos en archivo de texto.  
+
+### 🟠 Nivel Avanzado  
+- Refactorización con OOP.  
+- Autenticación con contraseñas.  
+- Interfaz gráfica (GUI) con `tkinter`.  
+
+### 🔴 Nivel Experto  
+- Integración con base de datos.  
+- Dockerización de la aplicación.  
+- Versión web con Flask o Django.  
 
 ---
 
-### **📜 Código Bash para instalar dependencias desde `environment.yml`**  
-Guárdalo en un archivo `install.sh` o ejecútalo directamente en la terminal:  
-```bash
-#!/bin/bash
-
-# Nombre del entorno
-ENV_NAME="taximeter-env"
-
-echo "🚀 Creando el entorno de Anaconda desde environment.yml..."
-conda env create -f environment.yml
-
-echo "🔄 Activando el entorno $ENV_NAME..."
-conda activate $ENV_NAME
-
-echo "✅ Instalación completada. Ya puedes ejecutar el proyecto."
-```
-**Ejecutar el script:**  
-```bash
-bash install.sh
-```
----
-
-## Conclusiones por fase
-### Esencial
-- Se ha umplido con los requerimientos exigidos, además de estructurar por módulos la aplicación y realizar pruebas del archivo **billing.py**. No se han completado datisfactoriamente los tests sobre el archivo **trip_service.py**.
-- Se ha buscado la comodidad de uso y comprensión para el usuario con preguntas sencillas y claras.
-- Se establece el tiempo real como cuantificador del precio final.
-### Medio
-- En cuanto al sistema de registro, se han implementado dos archivos:
-  - taximeter.log: que recoge todas las acciones/eventos de relevancia que se producen durante la ejecución de la aplicación.
-  - trip_history.txt: guarda información diferente al taximeter.log, como es marca de tiempo de inicio(timestamp), los segundos que pasa el taxi parado, en movimiento y el coste total del trayecto.
-
-# 🛡️ Licencia - GNU General Public License v3.0  
+## 📄 Licencia  
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
 
@@ -114,3 +140,10 @@ Puedes usarlo, modificarlo y distribuirlo bajo los términos de la licencia.
 
 🔗 **Más información:** [Licencia GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)  
 
+---
+
+## 👨‍💻 Autor  
+- **Juan Domingo**  
+- **Última actualización:** A diario hasta la fecha de entrega del proyecto.  
+
+---
