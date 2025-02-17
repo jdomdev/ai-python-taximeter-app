@@ -20,3 +20,18 @@
 2025-02-14 12:25:14.865098 | Time stopped: 17.27s | Time moving: 16.27s | Total cost: 1.85€
 0.00s stopped | 0.00s moving | Cost: 0.00€
 45.00s stopped | 14.00s moving | Cost: 1.94€
+15.00s stopped | 9.00s moving | Cost: 0.91€
+17.00s stopped | 14.00s moving | Cost: 0.63€
+17.00s stopped | 14.00s moving | Cost: 0.63€
+17.00s stopped | 14.00s moving | Cost: 0.63€
+16.00s stopped | 6.00s moving | Cost: 1.13€
+16.00s stopped | 6.00s moving | Cost: 1.13€
+16.00s stopped | 6.00s moving | Cost: 1.13€
+10.00s stopped | 13.00s moving | Cost: 1.47€
+12.00s stopped | 12.00s moving | Cost: 2.37€
+12.00s stopped | 12.00s moving | Cost: 2.37€
+12.00s stopped | 12.00s moving | Cost: 2.37€
+8.00s stopped | 4.00s moving | Cost: 1.08€
+8.00s stopped | 4.00s moving | Cost: 1.08€
+2025-02-14 22:59:17.766289 | 7.00s stopped | 3.00s moving | Cost: 0.52€
+2025-02-14 22:59:25.354653 | 7.00s stopped | 3.00s moving | Cost: 0.52€

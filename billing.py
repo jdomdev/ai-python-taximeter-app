@@ -1,5 +1,6 @@
 import logging
 import random
+from datetime import datetime
 
 class Billing:
     STOP_RATE = 0.02  # Cost per second while stopped
@@ -27,7 +28,8 @@ class Billing:
         
         # Log trip details to history file
         with open('trip_history.txt', 'a') as f:
-            f.write(f"{time_stopped:.2f}s stopped | {time_moving:.2f}s moving | Cost: {total_cost_with_vat:.2f}€\n")
+            datetime_end_trip = datetime.now()
+            f.write(f"{datetime_end_trip} | {time_stopped:.2f}s stopped | {time_moving:.2f}s moving | Cost: {total_cost_with_vat:.2f}€\n")
         
         logging.info(f"Cost calculated: {total_cost_with_vat:.2f}€ (Demand factor: {self.demand_factor})")
         return total_cost_with_vat
