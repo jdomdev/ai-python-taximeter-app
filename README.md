@@ -1,33 +1,33 @@
-# 🚖 Taximeter App  
+# 🚖 **Taximeter App** - ¡La mejor solución para taxis modernos! 🚖
 
-## 📝 Descripción del Proyecto  
-Este proyecto consiste en desarrollar un prototipo de taxímetro digital utilizando Python. El objetivo es modernizar el sistema de facturación de los taxis y crear un sistema que calcule las tarifas a cobrar a los clientes de manera precisa y eficiente.  
-
----
-
-## 🛠️ Tecnologías Utilizadas  
-- **Python** 🐍  
-- **Git y GitHub** para control de versiones  
-- **Trello o Jira** para gestión del proyecto  
-- **Bibliotecas adicionales** según el nivel de implementación:  
-  - `logging`, `unittest` (Nivel Medio)  
-  - `tkinter`, `SQLite` (Nivel Avanzado)  
-  - `Docker`, `Flask/Django` (Nivel Experto)  
+## 📝 **Descripción del Proyecto**  
+¡Bienvenidos a **Taximeter App**, el prototipo de un taxímetro digital revolucionario creado con Python! El objetivo de este proyecto es modernizar el sistema de facturación en los taxis, brindando a los conductores y pasajeros una experiencia de cálculo de tarifas precisa y eficiente. **Taximeter App** no solo simplifica el cálculo de tarifas, sino que también lleva la tecnología a un nuevo nivel con una interfaz gráfica intuitiva y un rendimiento optimizado.
 
 ---
 
-## 🚀 Instalación y Uso  
+## 🛠️ **Tecnologías Utilizadas**  
+Hemos llevado la aplicación a un **nivel avanzado**, utilizando las siguientes tecnologías:
+
+- **Python 3.8+** 🐍: El lenguaje potente y versátil para todo tipo de soluciones.
+- **Kivy** 🎨: ¡La interfaz gráfica de usuario (GUI) ahora es espectacular! Hemos dejado atrás Tkinter y hemos mejorado la experiencia visual y de interacción con **Kivy**, ofreciendo una interfaz moderna y fluida.
+- **Git y GitHub**: Control de versiones de manera eficiente para una colaboración perfecta.
+- **Trello**: Gestión del proyecto para mantener todo en orden y alcanzar los hitos más rápido.
+
+---
+
+## 🚀 **Instalación y Uso**  
 
 ### **Requisitos Previos**  
-Asegúrate de tener instalado:  
-- **Python 3.8+** 🐍  
-- **Git** (opcional, para clonar el repositorio)  
+Asegúrate de tener instalado lo siguiente:  
+- **Python 3.8+** 🐍
+- **Git** (opcional, solo si deseas clonar el repositorio)  
+- **uv** para la gestión de entornos virtuales
 
 ---
 
 ### **Instalación con `pip`**  
 
-1. **Clona el repositorio** (opcional si ya tienes el código):  
+1. **Clona el repositorio** (si no lo tienes):  
    ```bash
    git clone https://github.com/jdomdev/taximeter-app-python.git
    cd taximeter-app-python
@@ -47,7 +47,7 @@ Asegúrate de tener instalado:
 
 4. **Ejecuta la aplicación**:  
    ```bash
-   python taximeter.py
+   python main.py
    ```
 
 ---
@@ -59,7 +59,7 @@ Asegúrate de tener instalado:
    pip install uv
    ```
 
-2. **Clona el repositorio** (opcional si ya tienes el código):  
+2. **Clona el repositorio** (si no lo tienes):  
    ```bash
    git clone https://github.com/jdomdev/taximeter-app-python.git
    cd taximeter-app-python
@@ -79,7 +79,7 @@ Asegúrate de tener instalado:
 
 5. **Ejecuta la aplicación**:  
    ```bash
-   python taximeter.py
+   python main.py
    ```
 
 ---
@@ -87,53 +87,64 @@ Asegúrate de tener instalado:
 ### **Uso de la Aplicación**  
 
 1. **Iniciar un viaje**:  
-   - La aplicación te preguntará si deseas iniciar el viaje. Responde `y` para comenzar.  
+   La app te preguntará si deseas iniciar el viaje. Responde `y` para comenzar.
 
 2. **Controlar el taxi**:  
-   - Durante el viaje, la aplicación te preguntará si deseas mover o detener el taxi. Responde `y` o `n` según sea necesario.  
+   Durante el trayecto, puedes mover o detener el taxi respondiendo `y` o `n` según sea necesario.
 
 3. **Finalizar el viaje**:  
-   - Cuando desees finalizar el viaje, responde `y` cuando se te pregunte si deseas terminar el trayecto.  
-   - La aplicación calculará el costo total y mostrará un resumen del viaje.  
+   Cuando quieras finalizar, responde `y` cuando se te pregunte si deseas terminar. La app calculará el costo total y te mostrará un resumen del viaje.
 
-4. **Iniciar un nuevo viaje**:  
-   - Después de finalizar un viaje, puedes iniciar uno nuevo sin cerrar la aplicación.  
-
----
-
-## 📌 Estado del Proyecto  
-🏗️ Nivel avanzado en proceso.  
-🔜 Próximas mejoras en los niveles siguientes.  
+4. **Nuevo viaje**:  
+   Una vez terminado un viaje, puedes iniciar otro sin necesidad de cerrar la aplicación.
 
 ---
 
-## 📊 Niveles de Implementación  
+## 📌 **Estado del Proyecto**  
+- 🏗️ **Nivel avanzado**: Se está trabajano en una GUI fluida y optimizada con **Kivy**.
+- 🔜 **Próximas mejoras**: Se está trabajando en la integración web y más funcionalidades para la versión estable, que ya está funcionando perfectamente.
 
-### 🟢 Nivel Esencial  
-Desarrollar un programa CLI (Interfaz de Línea de Comandos) en Python.
-- Al iniciar, el programa debe dar la bienvenida y explicar su funcionamiento.
-- Implementar las siguientes funcionalidades básicas:
-  - Iniciar un trayecto.
-  - Calcular tarifa mientras el taxi está parado (2 céntimos por segundo).
-  - Calcular tarifa mientras el taxi está en movimiento (5 céntimos por segundo).
-  - Finalizar un trayecto y mostrar el total en euros.
-  - Permitir iniciar un nuevo trayecto sin cerrar el programa.
+---
 
-### 🟡 Nivel Medio  
-- Implementar un sistema de logs para la trazabilidad del código.
-- Agregar tests unitarios para asegurar el correcto funcionamiento del programa.
-- Crear un registro histórico de trayectos pasados en un archivo de texto plano.
-- Permitir la configuración de precios para adaptarse a la demanda actual.
+## 📊 **Niveles de Implementación**
 
-### 🟠 Nivel Avanzado  
-- Refactorizar el código utilizando un enfoque orientado a objetos (OOP).
-- Implementar un sistema de autenticación con contraseñas para proteger el acceso al programa.
-- Desarrollar una interfaz gráfica de usuario (GUI) para hacer el programa más amigable. 
+### 🟢 **Nivel Esencial**  
+Desarrollar una CLI simple en Python con las funcionalidades básicas:
+- Iniciar un viaje y calcular la tarifa (2 céntimos por segundo en parado, 5 céntimos en movimiento).
+- Finalizar el viaje y mostrar el total en euros.
+- Permitir iniciar un nuevo viaje sin cerrar la aplicación.
 
-### 🔴 Nivel Experto  
-- Integrar una base de datos para almacenar los registros de trayectos pasados.
-- Dockerizar la aplicación para facilitar su despliegue y portabilidad.
-- Desarrollar una versión web de la aplicación accesible a través de internet.
+### 🟡 **Nivel Medio**  
+- **Registro de logs** para trazabilidad.
+- **Tests unitarios** para asegurar el correcto funcionamiento.
+- **Historial de trayectos** en un archivo de texto.
+- Configuración de precios para adaptarse a la demanda.
+
+### 🟠 **Nivel Avanzado**  
+- **Refactorización con OOP** para mejorar la arquitectura del código.
+- **Interfaz gráfica de usuario (GUI)** moderna y fluida con **Kivy**.
+- **Autenticación con contraseñas** para proteger el acceso a la aplicación.
+
+### 🔴 **Nivel Experto**  
+- Integración con una base de datos para almacenar trayectos históricos.
+- **Dockerización** para facilitar despliegues.
+- Desarrollo de una versión web accesible a través de internet.
+
+---
+
+## 📄 **Licencia**  
+[![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)  
+
+Este proyecto está licenciado bajo la **GNU General Public License v3.0**.  
+Puedes usarlo, modificarlo y distribuirlo bajo los términos de la licencia.
+
+🔗 **Más información:** [Licencia GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
+
+---
+
+## 👨‍💻 **Autor**  
+- **Juan Domingo**  
+- **Última actualización:** ¡Siempre trabajando en mejoras!
 
 ---
 
