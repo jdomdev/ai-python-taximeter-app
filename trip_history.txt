@@ -35,3 +35,4 @@
 8.00s stopped | 4.00s moving | Cost: 1.08€
 2025-02-14 22:59:17.766289 | 7.00s stopped | 3.00s moving | Cost: 0.52€
 2025-02-14 22:59:25.354653 | 7.00s stopped | 3.00s moving | Cost: 0.52€
+2025-02-17 21:52:41.664274 | 15.00s stopped | 2.00s moving | Cost: 1.20€
